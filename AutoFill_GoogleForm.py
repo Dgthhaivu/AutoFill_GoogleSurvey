@@ -24,7 +24,7 @@ browser.get(link)
 
 count = 0
 
-while(count < 2):
+while(count < 300):
     #page 1
     radio_buttons = browser.find_elements_by_class_name("appsMaterialWizToggleRadiogroupOffRadio")
     next=browser.find_element_by_class_name("appsMaterialWizButtonPaperbuttonContent")
