@@ -24,7 +24,7 @@ browser.get(link)
 
 count = 0
 
-while(count < 100):
+while(count < 200):
     #page 1
     radio_buttons = browser.find_elements_by_class_name("appsMaterialWizToggleRadiogroupOffRadio")
     next=browser.find_element_by_class_name("appsMaterialWizButtonPaperbuttonContent")
@@ -220,7 +220,10 @@ while(count < 100):
     button_range_Q15d = random.randint(15,19)
 
     #100 no - 300 yes
-    question12 = browser.find_element_by_xpath('/html/body/div/div[2]/form/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div/span/div/div[1]/label/div/div[1]/div/div[3]/div')
+    #Yes
+    question12 = browser.find_element_by_xpath('//*[@id="i5"]/div[3]/div')
+    #No
+    # question12 = browser.find_element_by_xpath('//*[@id="i8"]/div[3]/div')
     question12.click()
 
     question13 = browser.find_element(By.XPATH, '/html/body/div/div[2]/form/div[2]/div/div[2]/div[3]/div/div/div[2]')
